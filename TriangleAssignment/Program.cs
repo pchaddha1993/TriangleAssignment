@@ -42,24 +42,23 @@ namespace TriangleAssignment
                         int Side_2 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Side 3:");
                         int Side_3 = Convert.ToInt32(Console.ReadLine());
-
                         if ((Side_1 + Side_2 > Side_3) && (Side_2 + Side_3 > Side_1) && (Side_1 + Side_3 > Side_2))
                         {
                             Console.WriteLine("Numbers will form a triangle");
                             string triangleType = TriangleSolver.analyze(Side_1, Side_2, Side_3);
-                            Console.WriteLine("This is {0} triangle",triangleType);
+                            Console.WriteLine("This is {0} triangle", triangleType);
                             flag = false;
                         }
                         else
                         {
-                            Console.WriteLine("Numbers will not form a triangle");
+                            Console.WriteLine("Numbers will not form a triangle...Re-enter valid values!!");
                         }
                         break;
+
                     case 2:
                         Environment.Exit(0);
                         break;
                 }
-               
             }
         }
     }
