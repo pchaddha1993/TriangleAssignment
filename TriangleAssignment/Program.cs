@@ -45,7 +45,7 @@ namespace TriangleAssignment
                         if ((Side_1 + Side_2 > Side_3) && (Side_2 + Side_3 > Side_1) && (Side_1 + Side_3 > Side_2))
                         {
                             Console.WriteLine("Numbers will form a triangle");
-                            string triangleType = TriangleSolver.analyze(Side_1, Side_2, Side_3);
+                            string triangleType = TriangleSolver.Analyze(Side_1, Side_2, Side_3);
                             Console.WriteLine("This is {0} triangle", triangleType);
                             flag = false;
                         }
